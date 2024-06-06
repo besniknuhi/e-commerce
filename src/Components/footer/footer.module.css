@@ -1,0 +1,47 @@
+.footerContainer {
+  padding-bottom: 0;
+  background: #000;
+  height: 17rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+
+.credits {
+  color: #fff;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+
+.credits a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerNav {
+  flex-wrap: wrap;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footerList {
+  display: flex;
+  gap: 3rem;
+}
+
+.footerList li {
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.footerList li a {
+  color: #fff;
+  text-decoration: none;
+}

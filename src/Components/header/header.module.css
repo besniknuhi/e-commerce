@@ -1,0 +1,42 @@
+.nav {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12rem;
+  font-weight: 500;
+}
+
+.logo {
+  width: 85px;
+}
+
+.navlist {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: #000000;
+}

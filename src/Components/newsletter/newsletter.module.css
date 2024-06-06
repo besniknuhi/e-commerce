@@ -1,0 +1,37 @@
+.newsection {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 28rem;
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.container input,
+.container button {
+  border: none;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+}
+
+.container input {
+  margin-right: 0.7rem;
+  outline: none;
+}
+
+.container button {
+  cursor: pointer;
+}

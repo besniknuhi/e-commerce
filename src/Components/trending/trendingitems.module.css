@@ -1,0 +1,30 @@
+.item {
+  cursor: pointer;
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  transition: all 0.15s ease-in;
+}
+
+.item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.imgContainer {
+  box-sizing: border-box;
+  width: 21rem;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.itemDescription {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 1.4rem;
+}
