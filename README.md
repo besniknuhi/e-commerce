@@ -25,7 +25,10 @@ simple shopping experience that puts the focus on the products.</p>
 </div>
 
 <br><br>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e5d1c335b6fb7b75f42afac2bc323254925413f
 <h3 align='center'>Categories Page 👇</h3>
 
 <div align='center'>
