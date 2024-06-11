@@ -1,20 +1,21 @@
 import styles from "./header.module.css";
 import logo from "../../img/newlogo2.png";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navcontainer}>
-          <a href="">
+          <NavLink to="/">
             <img className={styles.logo} src={logo} alt="logo" />
-          </a>
+          </NavLink>
           <ul className={styles.navlist}>
             <li>
-              <a href="">categories</a>
+              <NavLink to="/categories">categories</NavLink>
             </li>
             <li>
-              <a href="">product page</a>
+              <NavLink to="/categories/product">product page</NavLink>
             </li>
             <li>
               <a href="">

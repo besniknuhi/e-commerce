@@ -1,26 +1,28 @@
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 import "./App.css";
-import Banner from "./Components/banners/Banner";
-import LowerBanner from "./Components/banners/LowerBanner";
-import Footer from "./Components/footer/Footer";
-import Header from "./Components/header/Header";
-import Home from "./Components/home/Home";
-import Newsletter from "./Components/newsletter/Newsletter";
-import Products from "./Components/products/Products";
-import Trending from "./Components/trending/Trending";
+import MainPage from "./pages/MainPage";
+import Categories from "./pages/Categories";
+import ProductPage from "./pages/ProductPage";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/categories" element={<Categories />}>
+        <Route path="product" element={<ProductPage />} />
+      </Route>
+    </Route>
+  )
+);
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Home />
-        <Products />
-        <Banner />
-        <Trending />
-        <LowerBanner />
-        <Newsletter />
-      </main>
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }

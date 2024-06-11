@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+<div align='center'><img src='https://user-images.githubusercontent.com/105128267/224688338-8f1f28b7-029b-4ed7-a567-86de0c44ff42.png'/></div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>About the project</h2>
 
-Currently, two official plugins are available:
+<p>This is a minimalist e-commerce website built with React and CSS. This
+website features a modern and intuitive design, with easy-to-use navigation and a
+simple shopping experience that puts the focus on the products.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>Credits for the design goes to <a href='https://github.com/Abderraouf-Rahmani'>Abderraouf</a></p>
 
-## Expanding the ESLint configuration
+👉 Live Demo: <a href='https://besniknuhi.github.io/e-commerce/'>e-commerce Demo</a>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h3>Build with:</h3>
 
-- Configure the top-level `parserOptions` property like this:
+» Vanilla CSS <br>
+» React JS <br>
+» Typescript
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<h2>Screenshots of the Project 📸</h2>
+<br>
+<h3 align='center'>Home Page 🏡</h3>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/105128267/213868640-e3421f0a-bb10-4352-82a1-1bda4df821e9.png'/>
+</div>
+
+<br><br>
+
+<h3 align='center'>Categories Page 👇</h3>
+
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/105128267/213868668-55c03494-0835-43e0-9cb1-429b9a243a65.png'/>
+
+<br>
+<br>
+<h3 align='center'>Product Page 🎁</h3>
+
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/105128267/213868690-5737cead-a56e-4500-88ff-d182426ce072.png'/>
+
+<br>
+<br>
+<h3 align='center'>Shopping Cart 🛒</h3>
+
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/105128267/213868718-6760d6de-9060-406f-816d-f9b317bb0e0c.png'/>
+</div>

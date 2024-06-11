@@ -1,9 +1,15 @@
+import React, { useState } from "react";
 import styles from "./newsletter.module.css";
 
 export default function Newsletter() {
-  function handleSubmit(e: any) {
+  const [email, setEmail] = useState<string>("");
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    e.target.reset();
+    if (e.target instanceof HTMLFormElement) {
+      e.target.reset();
+    }
+    setEmail("");
   }
 
   return (
@@ -11,7 +17,12 @@ export default function Newsletter() {
       <div className={styles.container}>
         <h2>Newsletter</h2>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input type="email" placeholder="your@email.com" />
+          <input
+            type="email"
+            placeholder="your@email.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <button type="submit">Subscribe</button>
         </form>
       </div>
