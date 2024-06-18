@@ -5,6 +5,7 @@ import homeImg from "../../img/header/home-img-1.jpg";
 import skinCareImg from "../../img/header/home-img-2.jpg";
 import kitchenImg from "../../img/header/home-img-3.jpg";
 import electronicsImg from "../../img/header/home-img-4.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,14 +13,14 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.gridContainer}>
           <div className={`${styles.featured} ${styles.gridOne}`}>
-            <a href="">
+            <Link to="/categories">
               <div className={styles.overlay}></div>
               <img className={styles.img} src={homeImg} alt="home products" />
               <p className={styles.description}>Live Comfortably</p>
-            </a>
+            </Link>
           </div>
           <div className={`${styles.featured} ${styles.gridTwo}`}>
-            <a href="">
+            <Link to="/categories">
               <div className={styles.overlay}></div>
               <img
                 className={styles.img}
@@ -27,10 +28,10 @@ export default function Home() {
                 alt="skin care products"
               />
               <p className={styles.description}>Skincare</p>
-            </a>
+            </Link>
           </div>
           <div className={`${styles.featured} ${styles.gridFour}`}>
-            <a href="">
+            <Link to="/categories">
               <div className={styles.overlay}></div>
               <img
                 className={styles.img}
@@ -38,10 +39,10 @@ export default function Home() {
                 alt="kitchen products"
               />
               <p className={styles.description}>Kitchen</p>
-            </a>
+            </Link>
           </div>
           <div className={`${styles.featured} ${styles.gridFourLow}`}>
-            <a href="">
+            <Link to="/categories">
               <div className={styles.overlay}></div>
               <img
                 className={styles.img}
@@ -49,7 +50,7 @@ export default function Home() {
                 alt="Electronic products"
               />
               <p className={styles.description}>Electronics</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
