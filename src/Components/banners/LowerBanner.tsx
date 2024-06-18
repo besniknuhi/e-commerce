@@ -1,6 +1,7 @@
 import styles from "./banner.module.css";
 //banner pic
 import bannerImg from "../../img/banner/banner2.jpg";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
   return (
@@ -18,9 +19,9 @@ export default function Banner() {
                 mix and match them freely.
               </p>
             </div>
-            <a href="">
-              <button>Shop Now</button>
-            </a>
+            <Link to="/categories">
+              <button onClick={() => window.scrollTo(0, 0)}>Shop Now</button>
+            </Link>
           </div>
         </div>
       </div>

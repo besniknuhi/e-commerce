@@ -2,6 +2,20 @@ import TrendingItems from "./TrendingItems";
 import styles from "./trending.module.css";
 
 export default function Trending() {
+  const slideLeft = () => {
+    let slider = document.getElementById("slider");
+    if (slider) {
+      slider.scrollLeft = slider.scrollLeft - 235;
+    }
+  };
+
+  const slideRight = () => {
+    let slider = document.getElementById("slider");
+    if (slider) {
+      slider.scrollLeft = slider.scrollLeft + 235;
+    }
+  };
+
   return (
     <section className={styles.trendingContainer}>
       <div className={styles.container}>
@@ -9,7 +23,7 @@ export default function Trending() {
           <div className={styles.trending}>
             <h3>Trending Now</h3>
             <div className={styles.buttons}>
-              <button>
+              <button onClick={slideLeft}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -27,7 +41,7 @@ export default function Trending() {
                   <path d="M5 12l6 -6"></path>
                 </svg>
               </button>
-              <button>
+              <button onClick={slideRight}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -47,7 +61,7 @@ export default function Trending() {
               </button>
             </div>
           </div>
-          <div className={styles.row}>
+          <div className={styles.row} id="slider">
             <TrendingItems />
           </div>
         </div>

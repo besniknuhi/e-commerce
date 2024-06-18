@@ -40,3 +40,7 @@
   text-decoration: none;
   color: #000000;
 }
+
+.navlist li a img {
+  font-weight: bold;
+}

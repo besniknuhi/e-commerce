@@ -15,7 +15,7 @@ export default function Header() {
               <NavLink to="/categories">categories</NavLink>
             </li>
             <li>
-              <NavLink to="/categories/product">product page</NavLink>
+              <NavLink to="/categories/product/1">product page</NavLink>
             </li>
             <li>
               <a href="">

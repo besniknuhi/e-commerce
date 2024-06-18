@@ -1,10 +1,20 @@
+import { Link } from "react-router-dom";
 import styles from "./categoriesproducts.module.css";
 
 export default function CategoriesProducts({ item }: any) {
   return (
     <div className={styles.gridItems}>
       <div key={item.id} className={styles.gridUnit}>
-        <a href="">
+        <Link
+          onClick={() => {
+            if (window.top) {
+              window.top.scrollTo(0, 0);
+            } else {
+              console.error("window.top is null");
+            }
+          }}
+          to={`/categories/product/${item.id}`}
+        >
           <div className={styles.header}>
             <img src={item.img} alt="" />
           </div>
@@ -12,7 +22,7 @@ export default function CategoriesProducts({ item }: any) {
             <p>{item.description}</p>
             <p className={styles.price}>${item.price}</p>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
