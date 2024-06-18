@@ -8,7 +8,7 @@ simple shopping experience that puts the focus on the products.</p>
 
 <p>Credits for the design goes to <a href='https://github.com/Abderraouf-Rahmani'>Abderraouf</a></p>
 
-👉 Live Demo: <a href='https://besniknuhi.github.io/e-commerce/'>e-commerce Demo</a>
+👉 Live Demo: <a href='https://besnik-e-commerce.vercel.app/'>e-commerce Demo</a>
 
 <h3>Build with:</h3>
 
