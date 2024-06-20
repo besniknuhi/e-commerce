@@ -1,7 +1,12 @@
 import styles from "./cart.module.css";
 import cartImg from "../../img/cart/empty-cart.png";
 
-export default function Cart({ toggle, active }) {
+interface CartProps {
+  toggle: () => void;
+  active: boolean;
+}
+
+export default function Cart({ toggle, active }: CartProps) {
   return (
     <>
       <div
