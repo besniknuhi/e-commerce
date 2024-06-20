@@ -7,7 +7,7 @@ import Cart from "../cart/Cart";
 export default function Header() {
   const [active, setActive] = useState<boolean>(false);
 
-  const toggle = (e: any): void => {
+  const toggle = (e?: any) => {
     e.preventDefault();
     setActive(!active);
   };
