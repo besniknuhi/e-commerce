@@ -44,3 +44,9 @@
 .navlist li a img {
   font-weight: bold;
 }
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
