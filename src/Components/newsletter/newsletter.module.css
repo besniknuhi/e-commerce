@@ -22,7 +22,6 @@
 
 .container input,
 .container button {
-  border: none;
   font-size: 1.7rem;
   padding: 0.7rem;
 }
@@ -30,8 +29,13 @@
 .container input {
   margin-right: 0.7rem;
   outline: none;
+  border: none;
+  border-radius: 20px;
 }
 
 .container button {
   cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
 }

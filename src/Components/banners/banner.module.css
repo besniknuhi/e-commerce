@@ -65,3 +65,19 @@
   object-fit: cover;
   width: 100%;
 }
+
+@media (max-width: 750px) {
+  .text {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text {
+    width: 100%;
+  }
+
+  .img {
+    display: none;
+  }
+}
