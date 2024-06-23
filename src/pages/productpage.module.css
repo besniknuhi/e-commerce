@@ -181,3 +181,23 @@
 .specDesc {
   font-size: 1.65rem;
 }
+
+@media screen and (max-width: 900px) {
+  .right h3 {
+    font-size: 3rem;
+  }
+
+  .right p {
+    font-size: 1.8rem;
+  }
+
+  .quantity {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productButtons {
+    max-width: 170px;
+    margin-bottom: 5rem;
+  }
+}
