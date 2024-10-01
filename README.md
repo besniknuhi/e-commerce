@@ -10,7 +10,7 @@ simple shopping experience that puts the focus on the products.</p>
 
 👉 Live Demo: <a href='https://besnik-e-commerce.vercel.app/'>e-commerce Demo</a>
 
-<h3>Build with:</h3>
+<h3>Built with:</h3>
 
 » Vanilla CSS <br>
 » React JS <br>
