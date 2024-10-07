@@ -10,6 +10,8 @@ import Categories from "./pages/Categories";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
 import NotFound from "./pages/NotFound";
+import { useState } from "react";
+import { ShoppingCartProvider } from "./context/cartContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +27,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <ShoppingCartProvider>
+        <RouterProvider router={router} />
+      </ShoppingCartProvider>
     </>
   );
 }

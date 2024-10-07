@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import styles from "./productpage.module.css";
 import Trending from "../Components/trending/Trending";
 import { items } from "../assets/AllData";
+import { useShoppingCart } from "../context/cartContext";
 
 export default function ProductPage() {
   const { id } = useParams<{ id: any }>();
@@ -24,6 +25,8 @@ export default function ProductPage() {
       setQuantity((prev) => prev - 1);
     }
   };
+
+  const { increaseItemQuantity } = useShoppingCart();
 
   return (
     <div className={styles.productPage}>
@@ -64,7 +67,9 @@ export default function ProductPage() {
               <p>${item[0].price * quantity}.00</p>
             </div>
             <div className={styles.buy}>
-              <button>Add to cart</button>
+              <button onClick={() => increaseItemQuantity(id)}>
+                Add to cart
+              </button>
               <button>Buy Now</button>
             </div>
           </div>

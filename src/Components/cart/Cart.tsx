@@ -1,5 +1,9 @@
 import styles from "./cart.module.css";
 import cartImg from "../../img/cart/empty-cart.png";
+import cartIcon from "../../img/cart.svg";
+import { useShoppingCart } from "../../context/cartContext";
+import { items } from "../../assets/AllData";
+import CartItem from "./CartItem";
 
 interface CartProps {
   toggle: () => void;
@@ -7,6 +11,7 @@ interface CartProps {
 }
 
 export default function Cart({ toggle, active }: CartProps) {
+  const { cartItems } = useShoppingCart();
   return (
     <>
       <div
@@ -17,32 +22,41 @@ export default function Cart({ toggle, active }: CartProps) {
         <div className={styles.cartTitle}>
           <h2>Your Shopping Cart (0)</h2>
           <button onClick={toggle}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="tabler-icon tabler-icon-x"
-            >
-              <path d="M18 6l-12 12"></path>
-              <path d="M6 6l12 12"></path>
-            </svg>
+            <img src={cartIcon} alt="cart" />
           </button>
         </div>
         <div className={styles.cartBody}>
-          <div className={styles.emptyCart}>
-            <img src={cartImg} alt="" />
-            <p>Your cart is empty</p>
-            <button className={styles.emptyButton} onClick={toggle}>
-              Keep Browsing
-            </button>
-          </div>
-          <div className={styles.fullCart}></div>
+          {cartItems.length === 0 && (
+            <div className={styles.emptyCart}>
+              <img src={cartImg} alt="" />
+              <p>Your cart is empty</p>
+              <button className={styles.emptyButton} onClick={toggle}>
+                Keep Browsing
+              </button>
+            </div>
+          )}
+          {cartItems.length > 0 && (
+            <div className={styles.fullCart}>
+              <div className={styles.cartItems}>
+                {cartItems.map((item) => (
+                  <CartItem key={item.id} {...item} />
+                ))}
+              </div>
+              <div className={styles.cartTotal}>
+                <div className={styles.total}>
+                  <p>Total</p>
+                  <p>
+                    $
+                    {cartItems.reduce((total, cartItem) => {
+                      const item = items.find((i) => i.id == cartItem.id);
+                      return total + (item?.price || 0) * cartItem.quantity;
+                    }, 0)}
+                  </p>
+                </div>
+                <button className={styles.checkout}>Checkout</button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>

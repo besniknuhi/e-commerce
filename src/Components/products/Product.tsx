@@ -13,8 +13,6 @@ export default function Product() {
             onClick={() => {
               if (window.top) {
                 window.top.scrollTo(0, 0);
-              } else {
-                console.error("window.top is null");
               }
             }}
             to={`/categories/product/${item.id}`}
